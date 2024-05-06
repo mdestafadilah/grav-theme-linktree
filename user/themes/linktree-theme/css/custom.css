@@ -1,0 +1,316 @@
+/* Core Stuff */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #606d6e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #454B4D;
+}
+
+a {
+    color: #1F8CD6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #175E91;
+}
+
+pre {
+    background: #F0F0F0;
+    margin: 1rem 0;
+    border-radius: 2px;
+}
+
+blockquote {
+    border-left: 10px solid #eee;
+    margin: 0;
+    padding: 0 2rem;
+}
+
+/* Utility Classes */
+.wrapper {
+    margin: 0 3rem;
+}
+
+.padding {
+    padding: 3rem 1rem;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* Content Styling */
+.header .padding {
+    padding: 1rem 0;
+}
+
+.header {
+    background-color: #1F8DD6;
+    color: #eee;
+}
+
+.header a {
+    color: #fff;
+}
+
+.header .logo {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.footer {
+    background-color: #eee;
+}
+
+/* Menu Settings */
+.main-nav ul {
+    text-align: center;
+    letter-spacing: -1em;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    letter-spacing: normal;
+}
+
+.main-nav ul li a {
+    position: relative;
+    display: block;
+    line-height: 45px;
+    color: #fff;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+.main-nav > ul > li > a {
+    border-radius: 2px;
+}
+
+/*Active dropdown nav item */
+.main-nav ul li:hover > a {
+    background-color: #175E91;
+}
+
+/* Selected Dropdown nav item */
+.main-nav ul li.selected > a {
+    background-color: #fff;
+    color: #175E91;
+}
+
+/* Dropdown CSS */
+.main-nav ul li {position: relative;}
+
+.main-nav ul li ul {
+    position: absolute;
+    background-color: #1F8DD6;
+    min-width: 100%;
+    text-align: left;
+    z-index: 999;
+
+    display: none;
+}
+.main-nav ul li ul li {
+    display: block;
+}
+
+/* Dropdown CSS */
+.main-nav ul li ul ul {
+    left: 100%;
+    top: 0;
+}
+
+/* Active on Hover */
+.main-nav li:hover > ul {
+    display: block;
+}
+
+/* Child Indicator */
+.main-nav .has-children > a {
+    padding-right: 30px;
+}
+.main-nav .has-children > a:after {
+    font-family: FontAwesome;
+    content: '\f107';
+    position: absolute;
+    display: inline-block;
+    right: 8px;
+    top: 0;
+}
+
+.main-nav .has-children .has-children > a:after {
+    content: '\f105';
+}
+
+/* --- */
+
+/* Style Settings */
+
+@import url('https://fonts.googleapis.com/css?family=Product%20Sans:400,700&display=swap');
+:root {
+    --font: 'Prodcut Sans', 'Product Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(30deg, #e95950,#bc2a8d, #fccc63, #8a3ab9);
+	background-size: 450% 450%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.theme-light {
+    --color-main: #fff;
+    --color-text: #fff;
+ }
+
+#Photo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 8px auto 13px;
+    border-radius: 25%;
+}
+
+#Name {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    display: block;
+    font-family: 'Product Sans';
+    width: 100%;
+    text-align: center;
+}
+
+#title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#linksbutton {
+    max-width: 580px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+
+.links {
+    display: block;
+        background-color: rgba(255, 255, 255, 0.0 );
+    color: var(--color-text);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
+    border: solid var(--color-main) 2px;
+}
+
+.links:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid var(--color-main) 2px;
+}
+
+.gears {
+    width: auto;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+.gear {
+    display: inline-block;
+        background-color: rgba(255, 255, 255, 0.0 );
+    color: var(--color-text);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
+    border: solid var(--color-main) 2px;
+}
+
+.gear:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid var(--color-main) 2px;
+}
+
+.footervalue {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.footervalue a {
+    text-decoration:none;
+}
+
+#footertext {
+    color: var(--color-main);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+}
