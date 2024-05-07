@@ -35,7 +35,7 @@ pages:
   type: regular
   dirs:
     - 'page://'
-  theme: linktree-theme
+  theme: linktree
   order:
     by: default
     dir: asc

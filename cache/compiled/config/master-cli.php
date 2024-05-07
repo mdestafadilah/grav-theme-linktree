@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1715067677,
-    'checksum' => '7a5c4c5bada11e00c3d87c80888a69ed',
+    'timestamp' => 1715067554,
+    'checksum' => 'bcfc437cf0a9c1e1f7fe8621d53f061a',
     'files' => [
         'user/config' => [
             'media' => [
@@ -19,7 +19,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1715067670
+                'modified' => 1715024076
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
@@ -3894,7 +3894,7 @@ node_modules'
                 'dirs' => [
                     0 => 'page://'
                 ],
-                'theme' => 'linktree',
+                'theme' => 'linktree-theme',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'

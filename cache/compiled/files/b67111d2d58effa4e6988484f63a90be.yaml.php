@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/RSUP/DEV/PHP/grav-theme-linktree/user/config/system.yaml',
-    'modified' => 1715024076,
-    'size' => 4467,
+    'modified' => 1715067670,
+    'size' => 4461,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -50,7 +50,7 @@ return [
             'dirs' => [
                 0 => 'page://'
             ],
-            'theme' => 'linktree-theme',
+            'theme' => 'linktree',
             'order' => [
                 'by' => 'default',
                 'dir' => 'asc'
